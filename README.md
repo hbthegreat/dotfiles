@@ -15,10 +15,10 @@ This will install the following:
 - `brew`
 - `zsh`
 - `oh-my-posh`
+- `aliasman`
 
 
-- `oh-my-zsh`
-- `powerlevel10k`
+
 - `zsh-autosuggestions`
 - `zsh-syntax-highlighting`
 - `tmux`

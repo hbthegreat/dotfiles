@@ -96,3 +96,61 @@ webi brew
 sudo apt install -y build-essential
 webi brew
 webi nerdfont
+webi install nerdfont firacode
+ls
+=>
+vim
+clear
+brew install hello
+sudo apt-get install build-essential procps curl file git
+clear
+brew install jandedobbeleer/oh-my-posh/oh-my-posh
+zsh
+sudo apt install zsh
+zsh
+clear
+brew install jandedobbeleer/oh-my-posh/oh-my-posh
+brew reinstall oh-my-posh
+oh-my-posh get shell
+zsh
+cd dotfiles/
+git status
+git add *
+git commit -m "init"
+git push
+cd ~/.ssh
+ls
+mv id_ed25519_home id_ed25519_home_github
+mv id_ed25519_home.pub id_ed25519_home_github.pub
+cd ~
+cd dotfiles/
+git add *
+git commit -m "test"
+git push
+git remove -v
+git remote -v
+git remote set-url origin git@github-home:hbthegreat/dotfiles.git
+git remote -v
+git pull
+clear
+webi aliasman
+ls
+webi lsd
+rg
+diff
+diff -y --suppress-common-lines
+ls
+git status
+diff -y --suppress-common-lines README.md 
+aliasman gc 'git commit -m'
+aliasman gri 'git rebase -i'
+aliasman la 'lsd -AF'
+aliasman ll 'lsd -lAhF'
+aliasman ls 'lsd -F'
+aliasman rgi 'rg -i'
+aliasman tree 'lsd -F --tree --group-dirs=last'
+cd dotfiles
+ga *
+aliasman ga 'git add'
+tree
+cd dotfiles/
