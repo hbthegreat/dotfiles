@@ -64,6 +64,12 @@
           "template": " \ued0d {{ .Full }}",
           "type": "node"
         },
+	{
+	  "foreground": "#fbf0df", 
+  	  "style": "plain",
+          "template": "  {{ .Full }}",  
+          "type": "bun"
+	},
         {
           "foreground": "#FFD700",
           "style": "plain",

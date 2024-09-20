@@ -20,6 +20,7 @@ fi
 # Install Bun using webi (as a regular user)
 echo "Installing Bun"
 webi bun
+export PATH="/home/hbthegreat/.bun/bin:$PATH"
 
 # Install Homebrew (as a regular user) via webi
 echo "Installing Homebrew"
@@ -112,6 +113,14 @@ else
     echo "Plugins installation script not found!"
     exit 1
 fi
+
+#Install angular cli
+echo "Installing angular cli"
+bun install -g @angular/cli
+
+# Intstall node
+echo "Installing node"
+webi node
 
 # Ensure the correct path for dotfiles and use stow (as the regular user)
 cd ~/dotfiles
