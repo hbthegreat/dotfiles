@@ -3,8 +3,11 @@
 set -e  # Exit immediately if a command exits with a non-zero status
 
 # Install necessary system packages as root
-echo "Installing stow, git, unzip, build-essential, procps, file, and other essential packages"
-sudo apt install stow git unzip build-essential procps file p7zip-full jq poppler-utils imagemagick subversion ffmpegthumbnailer -y
+echo "Installing stow, git, unzip, build-essential, procps, file, tmux and other essential packages"
+sudo apt install stow git unzip build-essential procps file p7zip-full jq poppler-utils imagemagick subversion ffmpegthumbnailer tmux neovim -y
+
+# Install TPM
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Install webi as the regular user
 echo "Installing webi"
@@ -45,6 +48,9 @@ fi
 # Install oh-my-posh (as a regular user via brew)
 echo "Installing oh-my-posh"
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
+
+# Intall tmuxinator
+brew install tmuxinator
 
 # Verify oh-my-posh installation
 if ! command -v oh-my-posh &> /dev/null; then
@@ -133,6 +139,12 @@ stow zsh
 
 echo "Stowing scripts"
 stow scripts
+
+echo "Stowing tmux"
+stow tmux
+
+echo "Stowing neovim"
+stow nvim
 
 # Notify that the setup is complete
 echo "Setup completed successfully!"

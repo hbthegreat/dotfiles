@@ -18,6 +18,9 @@ eval "$(zoxide init zsh)"
 autoload -Uz compinit
 compinit
 
+# Set default editor
+export EDITOR="nvim"
+
 # Add Homebrew to PATH
 if [ -d "/home/linuxbrew/.linuxbrew/bin" ]; then
   export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
@@ -73,7 +76,7 @@ function y() {
 export PATH="$HOME/hbthegreat/.bun/bin:$PATH"
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+# source <(ng completion script)
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
